@@ -51,7 +51,7 @@ class Schedule {
                     <div>{$this->provider}</div>
                 </div>
 
-                <h3 class='text-xl font-semibold text-gray-700 mt-6 mb-4 border-t pt-4 border-b pb-2'>Serviços/Itens Agendados (1..*)</h3>
+                <h3 class='text-xl font-semibold text-gray-700 mt-6 mb-4 border-t pt-4 border-b pb-2'>Serviços/Itens Agendados</h3>
                 <div class='space-y-4 border rounded-lg overflow-hidden'>
                     {$itemsListHtml}
                 </div>

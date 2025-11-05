@@ -70,7 +70,7 @@ $schedule->addItem($item3);
         </div>
 
         <footer class="mt-8 pt-4 border-t text-sm text-gray-500">
-            <p>Implementação com __toString(), Heredoc e Tipagem Estrita.</p>
+            <p>Implementação: Tipagem estrita, Constantes para status e Heredoc para exibição formatada.</p>
         </footer>
     </div>
 </body>

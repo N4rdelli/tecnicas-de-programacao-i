@@ -2,8 +2,8 @@
 declare(strict_types=1);
 
 // Chama todas as classes criadas que irão ter um relacionamento com a classe Assessment
-require_once 'Evaluator.php';
-require_once 'Recipe.php';
+// require_once 'Evaluator.php';
+// require_once 'Recipe.php';
 
 class Assessment {
     // Declara o atributo privado específico da classe
