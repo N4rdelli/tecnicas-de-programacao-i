@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require_once 'Recipe.php';
+// require_once 'Recipe.php';
 
 // Cria a subclasse Chef, que herda de Person
 class Chef extends Person {

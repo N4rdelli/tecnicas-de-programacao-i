@@ -2,9 +2,9 @@
 declare(strict_types=1);
 
 // Inclui todas as classes já criadas que terão um relacionamento com a classe Party
-require_once 'Client.php';
-require_once 'Contractor.php';
-require_once 'Decoration.php';
+// require_once 'Client.php';
+// require_once 'Contractor.php';
+// require_once 'Decoration.php';
 
 class Party
 {
@@ -41,7 +41,7 @@ class Party
         // Primeiro gera a lista de decorações em HTML
         $decorationListHtml = '';
         if (empty($this->decorations)) {
-            $decorationListHtml = "<li class='text-gray-500'>Nenhuma decoração registrada.</li>";
+            $decorationListHtml = "<p class='text-gray-500 p-4'>Nenhuma decoração registrada.</p>";
         } else {
             foreach ($this->decorations as $decoration) {
                 $decorationListHtml .= "<li class='bg-yellow-50 p-2 rounded-md border border-yellow-200 text-sm'>🎨 {$decoration}</li>";
@@ -54,12 +54,12 @@ class Party
         // E depois retorna a estrutura HTMl completa
         return <<<HTML_OUTPUT
             <div class='bg-gray-50 p-6 rounded-lg border border-gray-200'>
-                <h2 class='text-2xl font-bold text-gray-800 mb-4'>Detalhes do Contrato de Festa</h2>
+                <h2 class='text-2xl font-extrabold text-gray-800 mb-4'>Detalhes do Contrato de Festa</h2>
                 
-                <div class='grid grid-cols-3 gap-4 text-sm mb-8 p-4 bg-white rounded-md shadow-inner'>
-                    <div><p class='font-medium text-gray-500'>Data Contrato</p><p class='font-bold'>{$this->contractDate}</p></div>
-                    <div><p class='font-medium text-gray-500'>Data Festa</p><p class='font-bold text-pink-400'>{$this->partyDate}</p></div>
-                    <div><p class='font-medium text-gray-500'>Valor Total</p><p class='font-bold text-3xl text-green-600'>R$ {$formattedValue}</p></div>
+                <div class='grid grid-cols-3 gap-4 text-sm mb-8 p-4 bg-white rounded-lg shadow-md border-l-8 border-pink-500'>
+                    <div><p class='font-medium text-gray-500'>Data Contrato</p><p class='font-bold text-gray-700'>{$this->contractDate}</p></div>
+                    <div><p class='font-medium text-gray-500'>Data Festa</p><p class='font-bold text-xl text-pink-600'>{$this->partyDate}</p></div>
+                    <div><p class='font-medium text-gray-500'>Valor Total</p><p class='font-black text-3xl text-green-600'>R$ {$formattedValue}</p></div>
                 </div>
 
                 <h3 class='text-xl font-semibold text-gray-700 mt-6 mb-4 border-t pt-4'>Envolvidos (Agregação)</h3>

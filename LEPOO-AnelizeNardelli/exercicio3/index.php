@@ -59,15 +59,19 @@ $schedule->addItem($item3);
 </head>
 
 <body class="bg-gray-200 p-8 font-sans">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl p-8">
-        <div>
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl p-8">
+        <header class="mb-8 pb-4 border-b-4 border-indigo-500">
             <h3 class='text-xl font-semibold text-gray-700 mb-4'>Exercício 3</h3>
-            <h1 class="text-3xl font-bold text-indigo-700 mb-6 border-b-2 pb-2">Sistema de Agenda 💇‍♀️</h1>
-        </div>
+            <h1 class="text-3xl font-extrabold text-indigo-800"> Sistema de Agenda 💇‍♀️</h1>
+        </header>
 
         <div class="space-y-6">
             <?= $schedule ?>
         </div>
+
+        <footer class="mt-8 pt-4 border-t text-sm text-gray-500">
+            <p>Implementação com __toString(), Heredoc e Tipagem Estrita.</p>
+        </footer>
     </div>
 </body>
 

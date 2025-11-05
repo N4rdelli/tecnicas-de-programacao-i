@@ -1,5 +1,10 @@
 <?php
 declare(strict_types=1);
+require_once './classes/Phone.php';
+require_once './classes/Person.php'; 
+require_once './classes/Client.php';
+require_once './classes/Contractor.php';
+require_once './classes/Decoration.php';
 require_once './classes/Party.php';
 
 // Primeiro nós instanciamos o Cliente
@@ -39,16 +44,19 @@ $party->addDecoration($decoration2);
     <title>Exercício 1</title>
 </head>
 
-<body class="bg-gray-100 p-8">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg p-6">
-        <div>
+<body class="bg-gray-200 p-8 font-sans">
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl p-8">
+        <header class="mb-8 pb-4 border-b-4 border-indigo-500">
             <h3 class='text-xl font-semibold text-gray-700 mb-4'>Exercício 1</h3>
-            <h1 class="text-3xl font-bold text-indigo-700 mb-6 border-b-2 pb-2">Sistema Simplificado de Gestão de Festas 🎉</h1>
-        </div>
+            <h1 class="text-3xl font-extrabold text-indigo-800"> Sistema de Gestão de Festas 🎉</h1>
+        </header>
 
         <div class="space-y-6">
             <?= $party ?>
         </div>
+        <footer class="mt-8 pt-4 border-t text-sm text-gray-500">
+            <p>Implementação com __toString(), Heredoc e Tipagem Estrita.</p>
+        </footer>
     </div>
 </body>
 

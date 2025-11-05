@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require_once 'Person.php'; // Essa é a superclasse que vai servir de base para a classe Contractor
+// require_once 'Person.php'; // Essa é a superclasse que vai servir de base para a classe Contractor
 
 // Cria a subclasse Contractor, que herda de Person
 class Contractor extends Person

@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 // Fazemos a requisição das classes
 require_once '../exercicio1/classes/Person.php'; // Reutiliza a classe Person do primeiro exercício
-
+require_once '../exercicio1/classes/Phone.php';
 require_once './classes/Chef.php';
 require_once './classes/Evaluator.php';
 require_once './classes/Recipe.php';
@@ -53,15 +53,19 @@ $assessment = new Assessment(
 </head>
 
 <body class="bg-gray-200 p-8 font-sans">
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl p-8">
-        <div>
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl p-8">
+        <header class="mb-8 pb-4 border-b-4 border-indigo-500">
             <h3 class='text-xl font-semibold text-gray-700 mb-4'>Exercício 2</h3>
-            <h1 class="text-3xl font-bold text-indigo-700 mb-6 border-b-2 pb-2">Sistema de Avaliação de Receitas ⭐</h1>
-        </div>
+            <h1 class="text-3xl font-extrabold text-indigo-800"> Sistema de Avaliação de Receitas ⭐</h1>
+        </header>
 
         <div class="space-y-6">
             <?= $assessment ?>
         </div>
+
+        <footer class="mt-8 pt-4 border-t text-sm text-gray-500">
+            <p>Implementação com __toString(), Heredoc e Tipagem Estrita.</p>
+        </footer>
     </div>
 </body>
 
