@@ -2,7 +2,7 @@
 declare(strict_types=1);
 require_once 'Recipe.php';
 
-// Cria a subclasse Chef, que era de Person
+// Cria a subclasse Chef, que herda de Person
 class Chef extends Person {
     // Declara os atributos que serão esspecíficos da classe Chef (nesse caso, só Especialidade)
     private string $specialty;
