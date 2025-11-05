@@ -62,7 +62,7 @@ $schedule->addItem($item3);
     <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl p-8">
         <header class="mb-8 pb-4 border-b-4 border-indigo-500">
             <h3 class='text-xl font-semibold text-gray-700 mb-4'>Exercício 3</h3>
-            <h1 class="text-3xl font-extrabold text-indigo-800"> Sistema de Agenda 💇‍♀️</h1>
+            <h1 class="text-3xl font-extrabold text-indigo-800"> Agenda de Serviços (Salão) 💇‍♀️</h1>
         </header>
 
         <div class="space-y-6">

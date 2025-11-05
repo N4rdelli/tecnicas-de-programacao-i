@@ -62,11 +62,11 @@ class Party
                     <div><p class='font-medium text-gray-500'>Valor Total</p><p class='font-black text-3xl text-green-600'>R$ {$formattedValue}</p></div>
                 </div>
 
-                <h3 class='text-xl font-semibold text-gray-700 mt-6 mb-4 border-t pt-4'>Envolvidos (Agregação)</h3>
+                <h3 class='text-xl font-semibold text-gray-700 mt-6 mb-4 border-t pt-4'>Envolvidos</h3>
                 <div class='grid md:grid-cols-2 gap-6'>
                     <div>{$this->client}</div>      <div>{$this->contractor}</div>  </div>
 
-                <h3 class='text-xl font-semibold text-gray-700 mt-8 mb-4 border-t pt-4'>Decorações (Composição)</h3>
+                <h3 class='text-xl font-semibold text-gray-700 mt-8 mb-4 border-t pt-4'>Decorações</h3>
                 <ul class='list-none space-y-3'>
                     {$decorationListHtml}
                 </ul>
